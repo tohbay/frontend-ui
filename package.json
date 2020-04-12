@@ -7,7 +7,7 @@
     "run-build": "parcel build/index.html",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --out-dir build",
-    "build2": "parcel build src/index.html --out-dir build && npm run run-build",
+    "build2": "parcel build src --out-dir build && npm run run-build",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,10 +23,10 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
-    "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.4"
   },
   "dependencies": {
+    "parcel-bundler": "^1.12.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

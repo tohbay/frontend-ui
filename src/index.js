@@ -79,7 +79,6 @@ const Estimator = () => {
           />
         </div>
         <div className="form-item">
-          <label htmlFor="estimate"></label>
           <button
             type="submit"
             id="estimate"
