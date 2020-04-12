@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Single-page app for Covid-19 Estimator" />
+  <title>Covid-19 Estimator</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    *,
+    :after,
+    :before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      min-height: 100vh;
+      min-width: 100vw;
+      font-family: "PT Sans", sans-serif;
+      background: #f8f8f8;
+      color: #000
+    }
+
+    h1 {
+      text-align: center;
+      margin: 2rem
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      width: 40vw;
+      margin: 2rem auto
+    }
+
+    .form-item {
+      margin-bottom: 1rem;
+      font-size: 1.2rem
+    }
+
+    .form-input {
+      display: block;
+      width: 100%;
+      height: calc(1.5em + .75rem + 2px);
+      padding: .375rem .75rem;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: .5rem
+    }
+
+    select {
+      font-size: 1rem !important;
+      padding: .5rem;
+      line-height: 2
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border-radius: .3rem;
+      color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+      text-align: center;
+      font-weight: 400
+    }
+
+    @media only screen and (max-width:600px) {
+      .form {
+        min-width: 80vw
+      }
+
+      .form-item {
+        font-size: 1rem
+      }
+    }
+
+    @media only screen and (min-width:600px) {
+      .form {
+        min-width: 80vw
+      }
+
+      .form-item {
+        font-size: 1rem
+      }
+    }
+
+    @media only screen and (min-width:768px) {
+      .form {
+        min-width: 40vw
+      }
+
+      .form-item {
+        font-size: 1rem
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">Not Rendered</div>
+  <script src="index.js"></script>
+</body>
+
+</html>
